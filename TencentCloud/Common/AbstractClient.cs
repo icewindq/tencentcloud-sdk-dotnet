@@ -473,8 +473,8 @@ namespace TencentCloud.Common
         {
 #if NET45
             DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-	    DateTime utcNow = DateTime.UtcNow;
-	    long unixTime = (long)Math.Round((utcNow - startTime).TotalMilliseconds, MidpointRounding.AwayFromZero);
+            DateTime utcNow = DateTime.UtcNow;
+            long unixTime = (long)Math.Round((utcNow - startTime).TotalMilliseconds, MidpointRounding.AwayFromZero);
             return unixTime;
 #endif
 
